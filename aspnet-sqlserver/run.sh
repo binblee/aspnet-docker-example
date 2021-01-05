@@ -1,0 +1,5 @@
+export SQLSERVER_ADDRESS=
+export SQLSERVER_PORT=
+export SQLSERVER_USERNAME=
+export SQLSERVER_PASSWORD=
+dotnet run

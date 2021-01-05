@@ -1,0 +1,6 @@
+aspnet-helloworld:
+  image: aspnet-helloworld
+  labels:
+    aliyun.scale: '1'
+    aliyun.routing.port_5000: http://helloworld
+  restart: always

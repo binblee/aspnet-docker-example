@@ -1,0 +1,11 @@
+version: "2"
+services:
+  aspnet-helloworld:
+    image: registry.cn-hangzhou.aliyuncs.com/jingshanlb/aspnet-sqlserver
+    environment:
+      - SQLSERVER_ADDRESS=
+      - SQLSERVER_PORT=
+      - SQLSERVER_USERNAME=
+      - SQLSERVER_PASSWORD=
+    ports:
+      - 5000:5000

@@ -1,0 +1,12 @@
+version: "2"
+services:
+  aspnet-helloworld:
+    image: registry.cn-hangzhou.aliyuncs.com/jingshanlb/aspnet-sqlserver
+    environment:
+      - SQLSERVER_ADDRESS=${SQLSERVER_ADDRESS}
+      - SQLSERVER_PORT=${SQLSERVER_PORT}
+      - SQLSERVER_USERNAME=${SQLSERVER_USERNAME}
+      - SQLSERVER_PASSWORD=${SQLSERVER_PASSWORD}
+    labels:
+      aliyun.scale: '2'
+      aliyun.routing.port_5000: http://aspnet-sqlserver
